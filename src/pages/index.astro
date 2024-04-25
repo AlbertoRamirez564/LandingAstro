@@ -1,0 +1,149 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import faqData from "@/data/faqData.json";
+import testimonialData from "@/data/testimonialData.json";
+import featuresData from "@/data/featuresData.json";
+import { Icon } from "astro-icon";
+import Accordion from "@/components/Accordion.astro";
+import HomeBanner from "@/components/HomeBanner.astro";
+import { MotionBTTContainer } from "@/components/motion/MotionBTTContainer";
+import BadgeGroup from "@/components/badge/BadgeGroup.astro";
+import BadgeMessage from "@/components/badge/BadgeMessage.astro";
+import PageTitle from "@/components/PageTitle.astro";
+import Content from "@/components/Content.astro";
+import ContentImage from "@/components/ContentImage.astro";
+import BadgeIcon from "@/components/badge/BadgeIcon.astro";
+import CardGroup from "@/components/card/CardGroup.astro";
+import Card from "@/components/card/Card.astro";
+import CardBody from "@/components/card/CardBody.astro";
+import CardImage from "@/components/card/CardImage.astro";
+import CardHeader from "@/components/card/CardHeader.astro";
+import Column from "@/components/Column.astro";
+---
+
+<Layout
+    title="PET SHOP"
+    description=""
+>
+    <div class="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20">
+        <HomeBanner />
+        <!-- Home Banner -->
+        <SectionContainer
+            class="components--container wrap wrap-px grid gap-8 sm:gap-24"
+        >
+            <SectionContainer id="features" class="features">
+                <BadgeGroup alignment="center">
+                    <BadgeMessage>Informacion</BadgeMessage>
+                    <BadgeIcon icon="mdi:star-circle-outline" />
+                </BadgeGroup>
+                <PageTitle class="text-center mx-auto" type="default">
+                    "Las Mascotas y el Apoyo Emocional"
+                </PageTitle>
+                <Content class="text-center" alignment="center">
+                    <p>
+                      Las mascotas no solo son adorables, también desempeñan el rol de terapeutas peludos, 
+                      aliviando el estrés y elevando el ánimo con su presencia reconfortante
+
+
+                    </p>
+                </Content>
+                <ContentImage contentImageData={featuresData} />
+            </SectionContainer>
+            <!-- Features -->
+            <SectionContainer class="feature-tabs">
+                <BadgeGroup alignment="center">
+                    <BadgeMessage>Seccion de Compras</BadgeMessage>
+                    <BadgeIcon icon="twemoji:waving-hand" />
+                </BadgeGroup>
+                <PageTitle class="text-center mx-auto" type="default">
+                   Nuestros Productos
+                </PageTitle>
+                <Content class="text-center" alignment="center">
+                    <p>
+                       ¡Explora lo último en tecnología para mascotas en Pet Shop!
+                        Descubre dispositivos inteligentes y accesorios de vanguardia 
+                        diseñados para hacer la vida con tus mascotas más segura y divertida. ¡Bienvenido a la innovación en Pet Shop!
+                    </p>
+                </Content>
+                <p></p>
+                    <PageTitle class="text-center mx-auto" type="default">
+
+                  
+                </PageTitle>
+                <CardGroup
+                    class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
+                >
+
+                
+                    <Card class="col-span-1 text-primary-900">
+                        <CardBody class="w-full bg-white-600/20 p-12">
+                            <CardImage
+                                src="/images/p04.png"
+                                alt="Customizable Layouts image used."
+                            />
+                            <CardHeader
+                                class="!text-black !text-2xl !font-bold"
+                            >
+                                Collar GPS
+                            </CardHeader>
+                            <p>
+                                Explora la libertad segura con nuestro Collar GPS. 
+                                Con tecnología de rastreo en tiempo real, establece zonas seguras 
+                                y recibe alertas personalizadas. Diseñado para brindar tranquilidad,
+                                 este collar es la herramienta esencial para dueños que valoran la seguridad
+                                  y la conexión constante con sus mascotas.
+                            </p>
+                        </CardBody>
+                    </Card>
+                    
+                    <Card class="col-span-1 text-primary-900">
+                        <CardBody class="w-full bg-white-600/20 p-12">
+                            <CardImage
+                                src="/images/p03.jpeg"
+                                alt="Progress Tracking image used."
+                            />
+                            <CardHeader
+                                class="!text-black !text-2xl !font-bold"
+                            >
+                              Cepillo Electronico
+                            </CardHeader>
+                            <p>
+                               Transforma el momento del cepillado con nuestro Cepillo Electrónico. 
+                               Elimina eficazmente el pelo suelto y los nudos, haciendo que el aseo sea una 
+                               experiencia placentera. Con ajustes personalizables, este cepillo se adapta a 
+                               las necesidades de cada tipo de pelaje, promoviendo la salud y la belleza del pelaje de tu mascota.
+                            </p>
+                        </CardBody>
+                    </Card>
+                </CardGroup>
+            </SectionContainer>
+            <!-- More Features -->
+            <SectionContainer id="testimonials" class="benefits">
+                <BadgeGroup alignment="left">
+                    <BadgeMessage>Referencias</BadgeMessage>
+                    <BadgeIcon icon="twemoji:waving-hand" />
+                </BadgeGroup>
+                <PageTitle class="" type="default">
+                    Algunas Referencias de clientes 
+                </PageTitle>
+                <Column columnData={testimonialData} />
+            </SectionContainer>
+            <!-- Testimonials -->
+            <SectionContainer id="faq" class="faq">
+                <BadgeGroup alignment="center">
+                    <BadgeMessage>Informacion</BadgeMessage>
+                </BadgeGroup>
+                <PageTitle class="text-center mx-auto" type="default">
+                    Por que Elegirnos?
+                    <br />
+                    <br />
+               
+                </PageTitle>
+                <Accordion accordionData={faqData} />
+            </SectionContainer>
+        </SectionContainer>
+    </div>
+    <!-- FAQ -->
+</Layout>
+<!-- Components Container -->

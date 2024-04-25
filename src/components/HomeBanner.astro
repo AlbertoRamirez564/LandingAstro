@@ -1,0 +1,54 @@
+---
+import BadgeGroup from "./badge/BadgeGroup.astro";
+import BadgeIcon from "./badge/BadgeIcon.astro";
+import BadgeMessage from "./badge/BadgeMessage.astro";
+import Button from "./button/Button.astro";
+import ButtonGroup from "./button/ButtonGroup.astro";
+import Content from "./Content.astro";
+import SectionContainer from "./SectionContainer.astro";
+import PageTitle from "./PageTitle.astro";
+import { Icon } from "astro-icon";
+import { Image } from "@astrojs/image/components";
+import { MotionBTTContainer } from "./motion/MotionBTTContainer.jsx";
+---
+
+<SectionContainer class="page-banner--container py-16">
+    <SectionContainer class="page-banner--inner-container wrap wrap-px z-10">
+        <BadgeGroup alignment="center">
+            <BadgeMessage>Bienvenido!</BadgeMessage>
+            <BadgeIcon icon="mdi:hand-wave" />
+        </BadgeGroup>
+        <PageTitle class="text-center mx-auto" type="heavy">
+            
+¡Haz de cada día un momento especial para ti y tus amigos peludos en Pet Shop!
+
+
+        </PageTitle>
+        <Content class="text-center" alignment="center">
+            <p>
+               Tu destino para productos de alta calidad y cuidado excepcional para tus queridas mascotas.
+Descubre lo mejor en bienestar animal con nuestra selección única de productos y accesorios.{" "}
+            </p>
+        </Content>
+        <div class="mt-6 mb-16 text-center">
+            <ButtonGroup alignment="center">
+                <Button href="#features">A Cerca de Nosotros</Button>
+                
+                   
+                </a>
+            </ButtonGroup>
+        </div>
+        <div class="page-banner--image">
+            <Image
+                src={"/images/pet.jpg"}
+                width={700}
+                height={380}
+                alt={"Page Banner"}
+                objectFit={"cover"}
+                aspectRatio={16 / 9}
+                format={"webp"}
+                class="mx-auto"
+            />
+        </div>
+    </SectionContainer>
+</SectionContainer>

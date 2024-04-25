@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Nosotros",
+        "items": [
+            {
+                "label": "Inicio",
+                "href": "#features"
+            },
+            {
+                "label": "Referencias",
+                "href": "#testimonials"
+            },
+            {
+                "label": "Informacion",
+                "href": "#faq"
+            }
+        ]
+    },
+    {
+        "title": "Contacto",
+        "items": [
+            {
+                "label": "Youtube",
+                "href": "",
+                "target": "_blank"
+            },
+            {
+                "label": "Twitter",
+                "href": "",
+                "target": "_blank"
+            },
+            {
+                "label": "Instagram",
+                "href": "",
+                "target": "_blank"
+            },
+            {
+                "label": "Facebook",
+                "href": "",
+                "target": "_blank"
+            }
+        ]
+    }
+]

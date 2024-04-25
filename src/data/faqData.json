@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "title": "Calida y Seguridad",
+        "isOpen": true,
+        "content": "Nos comprometemos a proporcionar productos de la más alta calidad y seguridad. Cada artículo en nuestra tienda ha sido seleccionado con el cuidado que tus mascotas merecen, para garantizar su bienestar y felicidad."
+    },
+    {
+        "id": 2,
+        "title": "Diversion y Aventura",
+        "isOpen": false,
+        "content": "Entendemos la importancia de la diversión y la aventura en la vida de tus mascotas. Desde juguetes interactivos hasta accesorios de moda, ofrecemos una amplia gama de productos que harán que cada día sea una nueva aventura."
+    },
+    {
+        "id": 3,
+        "title": "Coneccion Humano y Mascota",
+        "isOpen": false,
+        "content": "En Pet Shop, entendemos que tu relación con tu mascota es única. Nuestro objetivo es fortalecer esa conexión proporcionando productos que mejoren la calidad de vida de ambos."
+    }
+    
+]

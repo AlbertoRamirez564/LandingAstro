@@ -1,0 +1,10 @@
+[
+    { "name": "Informacion", "to": "#features", "href": "/#features" },
+    { "name": "Referencias", "to": "#testimonials", "href": "/#testimonials" },
+    { "name": "Por que elegirnos?", "to": "#faq", "href": "/#faq" },
+    {
+        
+        
+        "target": "_blank"
+    }
+]
